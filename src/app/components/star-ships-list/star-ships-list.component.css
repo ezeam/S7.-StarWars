@@ -1,0 +1,23 @@
+:host {
+  background-color: black;
+  display: block; 
+  min-height: 100vh;
+}
+
+.logo{
+  height: 7rem;
+  width: auto;
+}
+.logo img{
+  height: 100%;
+  width: auto;
+}
+
+.card {
+  background-color: #151515;
+  width: 100rem;
+}
+
+.btn {
+  background-color: #151515;
+}

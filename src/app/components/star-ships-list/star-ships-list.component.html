@@ -1,0 +1,33 @@
+<div class="container-fluid pt-4 pb-3">
+  <div class="row align-items-center">
+    <div class="col-lg-4 col-12 d-flex justify-content-lg-start justify-content-center mb-lg-0 mb-3">
+      <div class="col-lg-4 col-12 d-flex justify-content-center mb-lg-0 mb-3">
+        <div class="logo">
+          <img src="../../../../img/logo.webp" />
+        </div>
+        <div class="col-lg-4 col-12 d-flex justify-content-lg-end justify-content-center">
+          @if(starShipsResuts$ | async; as resultObject){
+            <div class="container py-4">
+              <div class="row d-flex align-items-center mx-5">
+                @for(starship of resultObject.results; track $index){
+                  <button class="btn">
+                    <div class="card" style="width: 50rem;">
+                      <div class="card-body">
+                        <h5 class="card-title text-light">{{ starship.name }}</h5>
+                        <h6 class="card-subtitle mb-2 text-light">{{ starship.model }}</h6>
+                      </div>
+                    </div>                    
+                  </button>
+                }
+              </div>
+            </div>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
