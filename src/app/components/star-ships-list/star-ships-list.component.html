@@ -1,33 +1,30 @@
 <div class="container-fluid pt-4 pb-3">
-  <div class="row align-items-center">
-    <div class="col-lg-4 col-12 d-flex justify-content-lg-start justify-content-center mb-lg-0 mb-3">
-      <div class="col-lg-4 col-12 d-flex justify-content-center mb-lg-0 mb-3">
-        <div class="logo">
-          <img src="../../../../img/logo.webp" />
-        </div>
-        <div class="col-lg-4 col-12 d-flex justify-content-lg-end justify-content-center">
-          @if(starShipsResuts$ | async; as resultObject){
-            <div class="container py-4">
-              <div class="row d-flex align-items-center mx-5">
-                @for(starship of resultObject.results; track $index){
-                  <button class="btn">
-                    <div class="card" style="width: 50rem;">
-                      <div class="card-body">
-                        <h5 class="card-title text-light">{{ starship.name }}</h5>
-                        <h6 class="card-subtitle mb-2 text-light">{{ starship.model }}</h6>
-                      </div>
-                    </div>                    
-                  </button>
-                }
-              </div>
-            </div>
-          }
-        </div>
+  <div class="row justify-content-center">
+    <div class="col-12 d-flex justify-content-center">
+      <div class="logo">
+        <img src="../../../../img/logo.webp" alt="Logo" />
       </div>
     </div>
   </div>
+  <app-navbar></app-navbar>
+  <div class="row justify-content-center mt-4">
+    <div class="col-12 d-flex justify-content-center">
+      @if(starShipsResuts$ | async; as resultObject){
+        <div class="container py-4">
+          <div class="row justify-content-center">
+            @for(starship of resultObject.results; track $index){
+              <div class="col-12 d-flex justify-content-center mb-3">
+                <button [routerLink]="['/starships', extractId(resultObject.results[$index].url)]" class="card" style="width: 50rem;" > <!--    [routerLink]="['/starships', extractId(starShipsResuts$[$index].url)]-->
+                    <div class="card-body">
+                      <h5 class="card-title text-custom-color text-start">{{ starship.name.toUpperCase() }}</h5>
+                      <h6 class="card-subtitle text-custom-color text-start">{{ starship.model }}</h6>
+                    </div>                  
+                </button>
+              </div>
+            }
+          </div>
+        </div>
+      }
+    </div>
+  </div>
 </div>
-
-
-
-
