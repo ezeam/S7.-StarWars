@@ -4,15 +4,6 @@
   min-height: 100vh;
 }
 
-.logo{
-  height: 7rem;
-  width: auto;
-}
-.logo img{
-  height: 100%;
-  width: auto;
-}
-
 .card {
   background-color: #151515;
   width: 100rem;
@@ -29,4 +20,8 @@
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+a {
+  text-decoration: none;
 }

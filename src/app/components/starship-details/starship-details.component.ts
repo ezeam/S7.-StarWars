@@ -4,13 +4,15 @@ import { Starship } from '../../interfaces/starship';
 import { ActivatedRoute } from '@angular/router';
 import { StarWarsService } from '../../services/star-wars.service';
 import { AsyncPipe } from '@angular/common';
+import { RouterModule } from '@angular/router';
+import { NavbarComponent } from "../navbar/navbar.component";
 
 @Component({
-  selector: 'app-starship-details',
-  standalone: true,
-  imports: [AsyncPipe],
-  templateUrl: './starship-details.component.html',
-  styleUrl: './starship-details.component.css'
+    selector: 'app-starship-details',
+    standalone: true,
+    templateUrl: './starship-details.component.html',
+    styleUrl: './starship-details.component.css',
+    imports: [AsyncPipe, RouterModule, NavbarComponent]
 })
 export class StarshipDetailsComponent {
   starship$!: Observable<Starship>;

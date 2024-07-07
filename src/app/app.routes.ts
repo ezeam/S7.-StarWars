@@ -3,6 +3,9 @@ import { StarShipsListComponent } from './components/star-ships-list/star-ships-
 import { StarshipDetailsComponent } from './components/starship-details/starship-details.component';
 
 export const routes: Routes = [
+  {path: '', component: StarShipsListComponent },
   {path: 'starships', component: StarShipsListComponent},
-  {path: 'starships/:id', component: StarshipDetailsComponent},
+  {path: 'starships-details/:id', component: StarshipDetailsComponent},
+  {path: '**', redirectTo: '' }
 ];
+
