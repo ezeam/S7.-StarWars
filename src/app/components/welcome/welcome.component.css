@@ -1,0 +1,33 @@
+:host {
+  display: block;
+  background-color: black;
+  color: white;
+  height: 75vh;
+}
+
+.welcome-container {
+  text-align: center;
+  animation: fadeIn 3s ease-in-out;
+  background-image: url('../../../../public/img/fondoEstrellado.jpg');
+  /* Agrega un fondo negro semitransparente */
+  background-color: rgba(0, 0, 0, 0.5); /* Negro con 50% de opacidad */
+}
+
+.welcome-text {
+  padding: 30px; /* Añade espacio para el texto */
+  border-radius: 10px;
+}
+
+.welcome-text h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.welcome-text p {
+  font-size: 1em;   
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

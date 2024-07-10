@@ -1,3 +1,10 @@
+:host {
+  display: block;
+  background-color: black;
+  color: white;
+  height: 78vh;
+}
+
 .buttonFont {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;

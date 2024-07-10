@@ -1,0 +1,28 @@
+<div class="container-fluid pt-4 pb-3">
+  <div class="row align-items-center">
+    <div
+      class="col-lg-6 col-12 d-flex justify-content-lg-start justify-content-center mb-lg-0 mb-3"
+    >
+      <div class="ps-0 ps-lg-3">
+        <img class="me-3" src="/icons/fbDef.svg" style="width: 20px; height: 20px;"/>
+        <img class="me-3" src="/icons/itDef.svg" style="width: 20px; height: 20px;"/>
+        <img class="me-3" src="/icons/twitterDef.svg" style="width: 20px; height: 20px;"/>
+        <img class="me-3" src="/icons/youtubeDef.svg" style="width: 20px; height: 20px;"/>
+      </div>
+    </div>
+   
+    <div
+      class="col-lg-6 col-12 d-flex justify-content-lg-end justify-content-center"
+    >
+      <!-- @if(!userService.isLoggedIn()){ -->
+      <a class="nav-link text-secondary pe-3" routerLink="/login">LOGIN</a>
+      <!-- } @if(userService.isLoggedIn()){ -->
+      <a href="" class="nav-link text-secondary pe-3"   
+        >LOGOUT</a
+      >
+      <!-- } -->
+    </div>
+  </div>
+</div>
+<app-navbar />
+<router-outlet></router-outlet>
