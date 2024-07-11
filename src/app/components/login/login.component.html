@@ -1,0 +1,23 @@
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+  <div class="card " style="width: 20rem;">
+    <div class="card-body form ">
+      <h6 class="card-subtitle m-3 text-muted">If you want to know everything about the Star Wars ships, log in.</h6>
+      <input type="email" formControlName="email" placeholder="email" class="mb-2"/>
+      <div class="text-danger" [hidden]="email.valid || email.pristine">
+        <div>@if(email.errors?.['required']){Email is required}</div>
+        <div>@if(email.errors?.['email']){Email must have a correct structure}</div>
+      </div>
+      <input type="password" formControlName="password" placeholder="password" class="mb-2"/>
+      <div class="text-danger" [hidden]="password.valid || password.pristine">
+        <div>@if(password.errors?.['required']){Password is required}</div>
+        <div>@if(password.errors?.['pattern']){Password should be valid}</div>
+      </div>
+      <div class="d-flex justify-content-center">
+        <button type="submit" class="btn btn-primary">Login</button>
+      </div>      
+    </div>   
+  </div>
+  
+</form>
+
+

@@ -1,6 +1,8 @@
 .navbar-custom {
   position: relative;
   background-color: black; /* Añade este estilo para el color de fondo */
+  width: 100%; /* Asegúrate de que el contenedor ocupe todo el ancho */
+  overflow: hidden; /* Para evitar desbordamientos */
 }
 
 .navbar-custom::after {
@@ -44,13 +46,4 @@
   font-family: 'Fira Code', monospace;
 }
 
-.logo {
-  height: 7rem;
-  width: auto;
-}
-
-.logo img {
-  height: 100%;
-  width: auto;
-}
 
