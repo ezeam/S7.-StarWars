@@ -1,0 +1,45 @@
+{
+  "users": [
+    {
+      "email": "lerele@gmail.com",
+      "password": "$2a$10$Msuy9MciMSn9cF0TFUXdS.X6rkCXleOuj7oCLA6sLD1Rm6AiyNF0K",
+      "username": "lerele",
+      "id": 1
+    },
+    {
+      "email": "ester.zea.maldonado@gmail.com",
+      "password": "$2a$10$2UsVbwqGwE6GmlT/tSrocOI1oIO7jwgamFy6V70X5rKuLh3ik5Rj.",
+      "nombre": "Ester",
+      "apellidos": "Zea",
+      "id": 2
+    },
+    {
+      "email": "aaaa@sdf",
+      "password": "$2a$10$f5M3qsT3O5EV9uSac.Buqu2cIDzfIi57Z4Z/bEREMQzS7OhOoTxDK",
+      "nombre": "pepe",
+      "apellidos": "aaaaa",
+      "id": 3
+    },
+    {
+      "email": "ambre@gmail.com",
+      "password": "$2a$10$iI6Q3KDtceVoTIa7HGgi3OLfJqycyrfU9TsNFpmDuJO7/xYL/o.AS",
+      "nombre": "ambra",
+      "apellidos": "de albburquerque Zea",
+      "id": 4
+    },
+    {
+      "email": "ashjd@sdjhf",
+      "password": "$2a$10$vsUFJZilOSxWlncowsUutOQQkKam.D5m3WhGhxI.a5iTT9cpj.e7K",
+      "nombre": "ester",
+      "apellidos": "zea",
+      "id": 5
+    },
+    {
+      "email": "sdgfe@sdfjh",
+      "password": "$2a$10$bbaXfoT1epLIy4FC0HRpE.qBLN7YL59RA/foDFQsKB4UnkW11f0By",
+      "nombre": "andres",
+      "apellidos": "de Alburquerque",
+      "id": 6
+    }
+  ]
+}

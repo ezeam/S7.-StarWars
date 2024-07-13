@@ -1,0 +1,37 @@
+:host {
+  font-family: 'Orbitron', sans-serif;
+}
+
+button {  
+  color: grey;
+  font-weight: 800;
+  font-size: large;
+}
+
+.card {
+  background-color: black;
+  color: grey;
+  min-height: 470px;
+}
+
+a {
+  color:white;
+}
+
+.error {
+  color:#ff2b2b
+}
+
+a:hover {
+  color: #fff!important;
+  background-color: #333;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  color: #fff!important;
+  background-color: #333;
+  border-radius: 5px;
+  cursor: pointer;
+}
