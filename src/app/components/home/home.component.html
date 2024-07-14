@@ -8,24 +8,24 @@
         <img class="me-3" src="/icons/youtubeDef.svg"/>
       </div>
     </div>
-      <div class="col-4 d-flex justify-content-center">
+      <div class="col-12 col-lg-4 d-flex justify-content-center">
         <div class="logo">
           <img src="../../../../img/logo.webp" alt="Logo" />
         </div>
       </div>
 
-    <div
-      class="col-lg-4 col-12 d-flex justify-content-lg-end justify-content-center"
-    >
-      <!-- @if(!userService.isLoggedIn()){ -->
-      <a class="nav-link text-secondary pe-3" routerLink="/login">LOGIN</a>
-      <!-- } @if(userService.isLoggedIn()){ -->
-      <a href="" class="nav-link text-secondary pe-3"   
-        >LOGOUT</a
-      >
-      <!-- } -->
-    </div>
+      <div class="col-lg-4 col-12 d-flex justify-content-lg-end justify-content-center"> 
+        <!-- <ng-container *ngIf="!(authenticationService.isLoggedIn$ | async)"> -->
+          <a class="nav-link text-secondary pe-3" routerLink="/login">LOGIN</a>
+        <!-- </ng-container>
+        
+        <ng-container *ngIf="authenticationService.isLoggedIn$ | async"> -->
+          <a href="" class="nav-link text-secondary pe-3">LOGOUT</a>
+        <!-- </ng-container> -->
+      </div>
   </div>
 </div>
 <app-navbar />
 <router-outlet></router-outlet>
+
+

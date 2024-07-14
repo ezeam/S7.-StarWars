@@ -3,10 +3,9 @@ import { Injectable } from '@angular/core';
 import { BehaviorSubject, map, Observable, switchMap } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class AuthenticationService {
-
   private loggedIn = new BehaviorSubject<boolean>(!!localStorage.getItem('jwtToken'));
   private jwtToken = '';
   private username = new BehaviorSubject<string>(localStorage.getItem('username') || '');
@@ -35,6 +34,7 @@ export class AuthenticationService {
       })
     );
   }
+  
 
   register(credentials: any): Observable<boolean> {
     return this.http.post<any>(`http://localhost:3000/register`, credentials).pipe(

@@ -40,6 +40,33 @@
       "nombre": "andres",
       "apellidos": "de Alburquerque",
       "id": 6
+    },
+    {
+      "email": "ester.maldonado@gmail.com",
+      "password": "$2a$10$697gcfgjhnpjZ5u44dag5OvmdV9DrjtRMS5cYlbSEHoAZITT5ig5i",
+      "nombre": "Ester",
+      "apellidos": "Zea",
+      "id": 7
+    },
+    {
+      "email": "test@test.com",
+      "password": "$2a$10$VHwxVmDg2P43dm5ToCaAx.ox3Pzo8iJqY5fJjOjyjyBW6zcyodjBe",
+      "username": "asdasd",
+      "id": 8
+    },
+    {
+      "email": "asdfasf@gmail.com",
+      "password": "$2a$10$0nY9V6zJgmCtQsI7e3OMyOPwbw5SGleoig2iZp6AIo7HSPqYNP8wC",
+      "nombre": "asdasd",
+      "apellidos": "asdasfd",
+      "id": 9
+    },
+    {
+      "email": "asdfjyhsdf@sdfsd",
+      "password": "$2a$10$To3CMTbn10t1q3RLj/Fjf.hYzVXNPLSohcM5EwO0dmdrdPOs0KiLC",
+      "nombre": "Ester",
+      "apellidos": "Zea",
+      "id": 10
     }
   ]
 }
