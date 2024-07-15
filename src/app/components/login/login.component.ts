@@ -16,9 +16,7 @@ export class LoginComponent implements OnInit {
   errorMessage: string = '';
   isLoggedIn: boolean = false;
 
-  constructor(
-    private fb: FormBuilder,
-    private authentication: AuthenticationService,
+  constructor(private fb: FormBuilder,private authentication: AuthenticationService,
     private router: Router
   ) {}
 
@@ -59,6 +57,6 @@ export class LoginComponent implements OnInit {
 
   logout() {
     this.authentication.logout();
-    this.router.navigate(['/login']);
+    this.router.navigate(['/home']);
   }
 }

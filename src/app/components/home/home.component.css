@@ -4,12 +4,10 @@
   font-family: 'Orbitron', sans-serif;
 }
 
-
 img {
   width: 20px; 
   height: 20px;
 }
-
 
 .logo {
   height: 7rem;
@@ -19,4 +17,11 @@ img {
 .logo img {
   height: 100%;
   width: auto;
+}
+
+.nav-link:hover {
+  color: #fff!important;
+  background-color: #333;
+  border-radius: 5px;
+  cursor: pointer;
 }

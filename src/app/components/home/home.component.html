@@ -16,11 +16,12 @@
 
       <div class="col-lg-4 col-12 d-flex justify-content-lg-end justify-content-center"> 
         <!-- <ng-container *ngIf="!(authenticationService.isLoggedIn$ | async)"> -->
-          <a class="nav-link text-secondary pe-3" routerLink="/login">LOGIN</a>
+          
+          <button class="nav-link text-secondary pe-3" routerLink="/login">LOGIN</button>
         <!-- </ng-container>
         
         <ng-container *ngIf="authenticationService.isLoggedIn$ | async"> -->
-          <a href="" class="nav-link text-secondary pe-3">LOGOUT</a>
+          <button class="nav-link text-secondary pe-3" (click)="logOut()">LOGOUT</button>
         <!-- </ng-container> -->
       </div>
   </div>

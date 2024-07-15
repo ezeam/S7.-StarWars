@@ -8,7 +8,7 @@ import { userGuard } from './guard/user.guard';
 
 export const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
-  {path: 'home', component: WelcomeComponent},
+  { path: 'home', component: WelcomeComponent},
   { path: 'starships', component: StarShipsListComponent, canActivate:[userGuard] },
   { path: 'starships-details/:id', component: StarshipDetailsComponent, canActivate:[userGuard] },
   { path: 'login', component: LoginComponent },

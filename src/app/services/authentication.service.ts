@@ -12,13 +12,14 @@ export class AuthenticationService {
 
   isLoggedIn$ = this.loggedIn.asObservable();
   username$ = this.username.asObservable();
-
+  
   constructor(private http: HttpClient) {
     const token = localStorage.getItem('jwtToken');
     if (token) {
       this.jwtToken = token;
       this.loggedIn.next(true);
     }
+    console.log('log!',this.isLoggedIn$, localStorage.getItem('jwtToken')) 
   }
 
   login(credentials: any): Observable<boolean> {
@@ -46,11 +47,12 @@ export class AuthenticationService {
     return this.jwtToken;
   }
 
-  logout(): void {
+  logout(): boolean {
     this.jwtToken = '';
+    localStorage.clear();
+    localStorage.removeItem('username');
     this.loggedIn.next(false);
     this.username.next('');
-    localStorage.removeItem('jwtToken');
-    localStorage.removeItem('username');
+    return false;
   }
 }

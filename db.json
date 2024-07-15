@@ -67,6 +67,13 @@
       "nombre": "Ester",
       "apellidos": "Zea",
       "id": 10
+    },
+    {
+      "email": "test@test",
+      "password": "$2a$10$nQafHA6ZnoqTa10EfQRtRuFkciMdNxdQ9ZPxR49v0zLN4wYjkr7r.",
+      "nombre": "test",
+      "apellidos": "test",
+      "id": 11
     }
   ]
 }
