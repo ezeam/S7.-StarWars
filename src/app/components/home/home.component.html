@@ -14,15 +14,17 @@
         </div>
       </div>
 
-      <div class="col-lg-4 col-12 d-flex justify-content-lg-end justify-content-center"> 
-        <!-- <ng-container *ngIf="!(authenticationService.isLoggedIn$ | async)"> -->
-          
-          <button class="nav-link text-secondary pe-3" routerLink="/login">LOGIN</button>
-        <!-- </ng-container>
-        
-        <ng-container *ngIf="authenticationService.isLoggedIn$ | async"> -->
-          <button class="nav-link text-secondary pe-3" (click)="logOut()">LOGOUT</button>
-        <!-- </ng-container> -->
+      <div class="col-lg-4 col-12 d-flex justify-content-lg-end justify-content-center">
+        @if(!(authenticationService.isLoggedIn$ | async)){
+          <ng-container>          
+            <button class="nav-link text-secondary pe-3" routerLink="/login">LOGIN</button>
+          </ng-container>
+        } 
+        @if(authenticationService.isLoggedIn$ | async){
+          <ng-container>
+            <button class="nav-link text-secondary pe-3" (click)="logOut()">LOGOUT</button>
+          </ng-container>
+        }  
       </div>
   </div>
 </div>

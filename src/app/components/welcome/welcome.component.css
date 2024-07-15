@@ -6,8 +6,7 @@
 
 .welcome-container {
   text-align: center;
-  animation: fadeIn 3s ease-in-out;
-  background-image: url('../../../../public/img/fondoEstrellado.jpg');
+  animation: fadeIn 3s ease-in-out; 
   /* Agrega un fondo negro semitransparente */
   background-color: rgba(0, 0, 0, 0.5); /* Negro con 50% de opacidad */
   min-height: 100vh; /* Asegura que el contenedor tenga al menos el alto de la ventana */
