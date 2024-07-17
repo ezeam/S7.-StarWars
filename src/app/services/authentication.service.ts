@@ -34,12 +34,17 @@ export class AuthenticationService {
         return true;
       })
     );
-  }  
+  }
+  
 
   register(credentials: any): Observable<boolean> {
     return this.http.post<any>(`http://localhost:3000/register`, credentials).pipe(
       switchMap(() => this.login(credentials))
     );
+  }
+
+  get getJwtToken(): string {
+    return this.jwtToken;
   }
 
   logout(): boolean {

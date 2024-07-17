@@ -6,13 +6,14 @@ import { StarWarsService } from '../../services/star-wars.service';
 import { AsyncPipe } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { NavbarComponent } from "../navbar/navbar.component";
+import { PilotsComponent } from "../pilots/pilots.component";
 
 @Component({
     selector: 'app-starship-details',
     standalone: true,
     templateUrl: './starship-details.component.html',
     styleUrl: './starship-details.component.css',
-    imports: [AsyncPipe, RouterModule, NavbarComponent]
+    imports: [AsyncPipe, RouterModule, NavbarComponent, PilotsComponent]
 })
 export class StarshipDetailsComponent {
   starship$!: Observable<Starship>;
