@@ -19,7 +19,13 @@ img {
   width: auto;
 }
 
-.nav-link:hover {
+button {  
+  color: grey;
+  font-weight: 800;
+  font-size: large;
+}
+
+button:hover {
   color: #fff!important;
   background-color: #333;
   border-radius: 5px;

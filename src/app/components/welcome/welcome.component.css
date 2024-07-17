@@ -9,7 +9,7 @@
   animation: fadeIn 3s ease-in-out; 
   /* Agrega un fondo negro semitransparente */
   background-color: rgba(0, 0, 0, 0.5); /* Negro con 50% de opacidad */
-  min-height: 100vh; /* Asegura que el contenedor tenga al menos el alto de la ventana */
+  min-height: 70vh; /* Asegura que el contenedor tenga al menos el alto de la ventana */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -18,15 +18,16 @@
 .welcome-text {
   padding: 0px; /* Añade espacio para el texto */
   border-radius: 10px;
+  color: grey;
 }
 
-.welcome-text h3 {
-  font-size: 1.5em; /* Ajusta el tamaño de la fuente del título */
-  margin-bottom: 20px;
+.welcome-text h2 {
+  font-size: 1.3em; /* Ajusta el tamaño de la fuente del título */
+  margin-bottom: 15px;
 }
 
 .welcome-text p {
-  font-size: 1em;
+  font-size: 0.75em;
   line-height: 1.5; /* Ajusta el espacio entre líneas */
 }
 
@@ -47,3 +48,9 @@
     padding: 20px; /* Añade un poco de espacio alrededor del contenido */
   }
 }
+
+img {
+  max-width: 75%;
+}
+
+

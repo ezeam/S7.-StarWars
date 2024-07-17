@@ -74,6 +74,20 @@
       "nombre": "test",
       "apellidos": "test",
       "id": 11
+    },
+    {
+      "email": "claudia@claudia.com",
+      "password": "$2a$10$q/3Z34e8HebNLVT3U/z9je4kowUPaVkLhuIX3v7OwfJc4IFlj4dCi",
+      "nombre": "claudia",
+      "apellidos": "claudia",
+      "id": 12
+    },
+    {
+      "email": "ccc@gmail.com",
+      "password": "$2a$10$FecaTJGpouV4hxpTXBoc0ue/sIC47RNaQzI7DVEXfxq0AvoEkJ.9.",
+      "nombre": "Ester",
+      "apellidos": "Zea",
+      "id": 13
     }
   ]
 }

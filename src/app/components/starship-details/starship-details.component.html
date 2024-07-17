@@ -7,14 +7,8 @@
   <div class="card cardCustom text-white rounded-4 border-0">
     <div class="row g-0">
       <div class="col-lg-5">
-        <img
-          [src]="imageUrl"
-          class="imgCustom rounded-img"
-          alt="Image of {{ starship.name }}"
-          (error)="imageError()"
-        />
+        <img [src]="imageUrl" class="imgCustom rounded-img" alt="Image of {{ starship.name }}" (error)="imageError()"/>
       </div>
-
       <div class="col-lg-7">
         <div class="card-body">
           <h2 class="mb-4">{{ starship.name.toUpperCase() }}</h2>
@@ -25,7 +19,6 @@
             of {{ starship.hyperdrive_rating }} and it supports consumables for
             up to {{ starship.consumables }}.
           </p>
-
           <p>Model: {{ starship.model }}</p>
           <p>Const in credits: {{ starship.cost_in_credits }}</p>
           <p>Atmospheric Spedd: {{ starship.max_atmosphering_speed }}</p>
