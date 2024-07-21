@@ -31,7 +31,6 @@
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.7);
 }
 
-
 .card::before {
   content: '';
   position: absolute;
@@ -48,7 +47,6 @@
 .card:hover::before {
   opacity: 1; 
 }
-
 
 h6 {
   color: rgba(255, 255, 255, 0.8);
