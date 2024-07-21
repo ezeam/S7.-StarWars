@@ -1,0 +1,21 @@
+<div class="container myt-4 pb-4 mt-3">
+  <h2 class=" mb-3 text">FILMS</h2>
+  <hr class="mb-4" />
+  <div class="d-flex justify-content-center mb-5">
+    @if (filmsData$ | async; as films) { 
+      <div class="row justify-content-center">
+        @for (film of films; track $index) {
+          <div class="card m-3 p-0 pilots">
+            <img class="img-fluid" [src]="getPicture(film.url)" alt="{{ film.title }} photo" />
+            <div class="text-center p-2">
+              {{ film.title.toLocaleUpperCase() }}
+            </div>
+          </div>
+        }
+      </div>
+    } @else {
+      <h6 class="p-3">No Films Available.</h6>
+    }
+  </div>
+</div>
+

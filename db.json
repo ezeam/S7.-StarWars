@@ -88,6 +88,13 @@
       "nombre": "Ester",
       "apellidos": "Zea",
       "id": 13
+    },
+    {
+      "email": "claudia@gmail.com",
+      "password": "$2a$10$5VWqcjWDMhFz3g1QEKOzTu8BJpzS6YEqzPaULiqI.HpodMSglRkiy",
+      "nombre": "Claudia",
+      "apellidos": "Claudia",
+      "id": 14
     }
   ]
 }

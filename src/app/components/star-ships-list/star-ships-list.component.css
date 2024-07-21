@@ -1,16 +1,9 @@
 :host {
-  background-color: black;
-  display: block; 
   min-height: 100vh;
   font-family: 'Fira Code', monospace;
 }
 
 .card {
-  background-color: #151515;
-  width: 100rem;
-}
-
-.btn {
   background-color: #151515;
 }
 
@@ -23,6 +16,3 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-a {
-  text-decoration: none;
-}

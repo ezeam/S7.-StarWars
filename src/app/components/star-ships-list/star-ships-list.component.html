@@ -1,23 +1,17 @@
 
-  <div class="row justify-content-center">
-    <div class="col-12 d-flex justify-content-center">
-      @if(starShipsResuts$ | async; as resultObject){
-        <div class="container py-4">
-          <div class="row justify-content-center">
-            @for(starship of resultObject.results; track $index){
-              <div class="col-12 d-flex justify-content-center mb-3">
-                <a [routerLink]="['/starships-details', extractId(resultObject.results[$index].url)]" class="card" style="width: 50rem;" > <!--    [routerLink]="['/starships', extractId(starShipsResuts$[$index].url)]-->
-                    <div class="card-body">
-                      <h5 class="card-title text-custom-color text-start">{{ starship.name.toUpperCase() }}</h5>
-                      <h6 class="card-subtitle text-custom-color text-start">{{ starship.model }}</h6>
-                    </div>                  
-                </a>
-              </div>
-            }
-          </div>
-        </div>
+<div infiniteScroll [infiniteScrollDistance]="1" [infiniteScrollThrottle]="50" (scrolled)="onScroll()">
+  @if(starshipResult$ | async; as resultObject){
+  <div class="container mt-3 mb-3">
+    <div class="row d-flex align-items-center">
+      @for(starship of starshipList; track $index){
+      <button [routerLink]="['/starships-details', extractId(starship.url)]"
+        class="text-secondary text-start pt-2 pb-2 border border-0 border-rounded rounded-1 card my-2 col-10 mx-auto">
+        <h4 class="textName">{{starshipList[$index].name.toUpperCase()}}</h4>
+        <h5 class="textModel">{{ starshipList[$index].model }}</h5>
+      </button>
       }
     </div>
   </div>
-<router-outlet></router-outlet>
+  }
+</div>
 
