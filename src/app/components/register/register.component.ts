@@ -29,11 +29,9 @@ export class RegisterComponent {
   }
 
   register() {
-    // Check if the form is valid
     if (this.registerForm.invalid) {
-      // Display errors if the form is invalid
       this.errorMessage = 'Please check all required fields';
-      this.registerForm.markAllAsTouched(); // Mark all fields as touched to trigger validation messages
+      this.registerForm.markAllAsTouched();
       return;
     }
 

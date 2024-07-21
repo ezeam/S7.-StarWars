@@ -17,7 +17,8 @@
   
     constructor(private starWarsService: StarWarsService) {}
   
-    ngOnInit() {
+    ngOnInit():void {
+      window.scrollTo(0, 0);
       if (this.pilots && this.pilots.length > 0) {
         const requests = this.pilots.map(url => this.starWarsService.getPilotDetails(url));
         this.pilotsData$ = forkJoin(requests);

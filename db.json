@@ -95,6 +95,13 @@
       "nombre": "Claudia",
       "apellidos": "Claudia",
       "id": 14
+    },
+    {
+      "email": "alb@gmail.com",
+      "password": "$2a$10$BImwe4X5bj2JaG6TLC0JEuMk9FTiXeJCZcjmDzfeUvbcSwlTrF9CO",
+      "nombre": "Andres",
+      "apellidos": "ALB",
+      "id": 15
     }
   ]
 }

@@ -23,6 +23,7 @@ export class StarshipDetailsComponent {
   constructor(private route: ActivatedRoute, private service: StarWarsService) { }
   
   ngOnInit() {
+    window.scrollTo(0, 0);
     this.starship$ = this.route.params.pipe(
       switchMap(params => {
         const id = params['id'];

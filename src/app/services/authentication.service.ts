@@ -19,7 +19,6 @@ export class AuthenticationService {
       this.jwtToken = token;
       this.loggedIn.next(true);
     }
-    console.log('log!',this.isLoggedIn$, localStorage.getItem('jwtToken')) 
   }
 
   login(credentials: any): Observable<boolean> {
@@ -34,8 +33,7 @@ export class AuthenticationService {
         return true;
       })
     );
-  }
-  
+  }  
 
   register(credentials: any): Observable<boolean> {
     return this.http.post<any>(`http://localhost:3000/register`, credentials).pipe(

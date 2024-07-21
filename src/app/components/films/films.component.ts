@@ -13,13 +13,13 @@ import { CommonModule } from '@angular/common';
 })
 export class FilmsComponent implements OnInit {
 
-  filmsData$!: Observable<Film[]>;  // Observable de un array de objetos Film
-  @Input() films: string[] = [];  // Array de URLs de películas
+  filmsData$!: Observable<Film[]>;  
+  @Input() films: string[] = [];  
 
   constructor(private service: StarWarsService) {}
 
   ngOnInit(): void {
-    // Aquí solo necesitas la URL para obtener los detalles de las películas
+    window.scrollTo(0, 0);
     const requests = this.films.map(url => this.service.getFilmDetails(url));
     this.filmsData$ = forkJoin(requests);  
   }

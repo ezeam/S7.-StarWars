@@ -22,6 +22,7 @@ export class StarShipsListComponent implements OnInit {
   nextUrl: string = '';
 
   ngOnInit(): void {
+    window.scrollTo(0, 0);
     this.starshipResult$ = this.service.getStarShipList();
 
     this.service.getStarShipList().subscribe({
