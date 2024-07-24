@@ -1,27 +1,87 @@
-# StarWars
+# Star Wars Starships Angular Project
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.6.
+Este proyecto tiene como objetivo desarrollar una aplicación web usando Angular para consumir y mostrar datos sobre naves espaciales del universo de Star Wars. La aplicación debe permitir a los usuarios visualizar un listado de naves, ver detalles de cada nave, y gestionar usuarios con autenticación.
 
-## Development server
+## Conocimientos Requeridos
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Para facilitar la resolución de esta práctica, es importante tener conocimientos en:
 
-## Code scaffolding
+- **Angular 15/16**: Entender la estructura básica del proyecto y cómo implementarla.
+- **POSTMAN**: Herramienta para probar llamadas a APIs.
+- **Gestión de Guard**: Protege rutas en la aplicación.
+- **Routing**: Configuración de rutas en Angular.
+- **Servicios**: Creación y uso de servicios en Angular.
+- **Tokens JWT**: Autenticación basada en JSON Web Tokens.
+- **Paginación**: Manejo de datos paginados desde la API.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Información del Proyecto
 
-## Build
+El objetivo es desarrollar una aplicación que muestre información sobre las naves de Star Wars utilizando la API de Star Wars. La aplicación debe presentar un listado de naves y permitir ver los detalles de cada una.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### API a Consumir
 
-## Running unit tests
+- **Documentación**: [SWAPI Documentation](https://swapi.dev/documentation)
+- **API Principal**: [https://swapi.dev/api/starships](https://swapi.dev/api/starships)
+- **Alternativa**: [https://swapi.py4e.com/api/starships](https://swapi.py4e.com/api/starships)
+- **Imágenes**: [Star Wars Visual Guide](https://starwars-visualguide.com/assets/img/starships/5.jpg)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+**Nota**: La paginación está implementada en la API. Puedes usar el parámetro `page` para obtener más datos.
 
-## Running end-to-end tests
+## Ejercicios
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Nivel 1
 
-## Further help
+#### Ejercicio 1
+Implementar la pantalla principal que muestra un listado de naves. Debe mostrar:
+- Nombre de la nave
+- Modelo
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+#### Ejercicio 2
+Crear una página de detalles para cada nave. El usuario puede acceder a esta página desde el listado.
+
+#### Ejercicio 3
+Agregar un botón "View More" al final del listado para cargar más naves mediante paginación. Alternativamente, se puede implementar un scroll infinito.
+
+#### Ejercicio 4
+Modernizar el diseño de la web para que se asemeje al sitio oficial de Star Wars.
+
+#### Ejercicio 5
+Implementar una página de bienvenida con un botón que redirija a la página principal de naves. Agregar una barra de navegación superior para el acceso a la página principal.
+
+#### Ejercicio 6
+Crear una pantalla de login y registro usando JSON-SERVER-AUTH con JWT para la autenticación. Instrucciones:
+1. Instalar: `npm install -D json-server@0.17.4 json-server-auth`
+2. Crear `db.json` para usuarios.
+3. Activar el backend: `npx json-server-auth db.json`
+
+#### Ejercicio 7
+Proteger el listado de naves para que solo sea visible para usuarios registrados. Utilizar Angular Guard para redirigir a la página de login cuando sea necesario.
+
+### Nivel 2
+
+#### Ejercicio 8
+Mejorar la ficha de cada nave mostrando tarjetas de los pilotos que han utilizado la nave. Crear un componente para esto.
+
+#### Ejercicio 9
+Mostrar las tarjetas de las películas en las que ha aparecido la nave.
+
+## Instalación
+
+1. Clonar el repositorio.
+2. Navegar al directorio del proyecto: `cd star-wars-starships`
+3. Instalar dependencias: `npm install`
+4. Ejecutar el servidor de desarrollo: `ng serve`
+
+## Requisitos Adicionales
+
+- **Angular CLI**: Asegúrate de tener Angular CLI instalado (`npm install -g @angular/cli`).
+- **JSON-SERVER-AUTH**: Utilizar para la autenticación (opcional para pruebas).
+
+## Enlaces Útiles
+
+- [Angular 15/16 Free Course #1 - Create Base Project Structure](https://www.youtube.com/watch?v=XYZ)
+- [JSON-SERVER-AUTH Tutorial](https://github.com/realistic/JSON-SERVER-AUTH)
+
+---
+
+¡Buena suerte con el desarrollo de la aplicación y que la Fuerza te acompañe!
