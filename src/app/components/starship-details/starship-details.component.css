@@ -27,7 +27,9 @@
 .rounded-img {
   border-top-left-radius: 0.75rem; 
   border-top-right-radius: 0.75rem;
-  
+  object-fit: cover; /* Asegura que la imagen cubra el contenedor completamente */
+  height: 100%; /* Necesario para que funcione con object-fit */
+  width: 100%;
 }
 
 @media (min-width: 992px) {
